@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uso de box</title>
+    <style>
+        body{
+            font: 1em Arial, Helvetica, sans-serif;
+            background-color: peachpuff;
+        }
+        article.caixa{
+            background-color: snow;
+            width: 400px;
+            margin: auto;
+            padding: 1px 10px;
+            box-shadow: 3px 5px 4px;
+            border-radius: 10px;
+        }
+        nav{
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Meu site</h1>
+        <nav>
+            <a href="">motos</a>
+            <a href="">peças</a>
+            <a href="">homens</a>
+            <a href="">mulheres</a>
+            <a href="">esperimente a h-d</a>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <article calss="caixa">
+                <h2>Título</h2>
+                <p>Texto do artigo</p>
+            </article>
+            <article class="caixa">
+                <h2>Título</h2>
+                <p>Texto do artigo</p>
+                <aside>
+                    <p>Conteúdo periférico do artigo</p>
+                </aside>
+            </article>
+        </section>
+        <aside>
+            <p>conteúdo periférico do site</p>
+        </aside>
+    </main>
+    <footer>
+        <p>conteúdo do rodapé</p>
+    </footer>
+</body>
+</html>

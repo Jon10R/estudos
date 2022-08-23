@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Midias em HTML5</title>
+</head>
+<body>
+    <H2>Imagen dinâmica</H2>
+    <p>Tente abrir esse site em varios dispositivos diferentes ou simplesmente aumente e diminua o tamanho do seu navegador</p>
+
+    <picture>
+        <source media="(max-width: 950px)" srcset="imagens/foto-p.png" type="image/png">
+
+        <source media="(max-width: 1250px)" srcset="imagens/foto-m.png" type="image/png">
+        <img src="imagens/lago.jpg" alt="imagem flexivel">
+    </picture>
+    <h2>Rproduzindo áudio</h2>
+    <p>Vamos aprender a reprodusir áudio em HTML5.</p>
+    <audio src="midia/audio.mp3"controls></audio>
+    <P>O player acima foi adicionado usando a tag <strong>audio src=</strong>"midia/audio.mp3"<strong>controls</strong></P>
+    <p>A tag src= define o arquivo a ser reprodusido.</p>
+    <P>A tag controls adiciona o controlador do áudio no site.</P>
+    <p>Um exemplo do código:</p>
+    <PRE>
+        <code>
+    &ltaudio&gt src="midia/audio.mp3"controls &lt/audio&gt
+        </code>
+    </PRE>
+    <h2>Melhor comparibilidade com os navegadores</h2>
+    <p>O exemplo acima pode não ser compatível com os navegadores, pois o seu formato é o mp3.</p>
+    <p>Outra maneira é a seguinte:</p>
+    <audio preload="metadata" controls loop>
+        <source src="midia/audio.mp3" type="audio/mpeg">
+        <source src="midia/audio.ogg" type="audio/ogg">
+        <source src="midia/audio.wav" type="audio/wav">
+        <p>Infelizmente seu navegador não consegue reproduzir o áudio. <a href="midia/audio.mp3">Clique aqui para baixar o arquivo em mp3.</a>
+        </p>
+    </audio>
+    <p>O exemplo acima possue o seguinte código:</p>
+    <pre>
+        <code>
+            <strong>audio preload</strong>="metadata" <strong>controls loop></strong>
+                <strong>source src</strong>="midia/audio.mp3" <strong>type=</strong>"audio/mpeg"
+                <strong>source src</strong>="midia/audio.ogg" <strong>type=</strong>"audio/ogg"
+                <strong>source src</strong>="midia/audio.wav" <strong>type=</strong>"audio/wav"
+                <strong>p</strong> Infelizmente seu navegador não consegue reproduzir o áudio. 
+                <strong>a href</strong>="midia/audio.mp3">Clique aqui para baixar o arquivo em mp3. <strong>/a /p</strong>
+            /audio
+        </code>
+    </pre>
+    <p>A tag preload="metadata" define que ao abrir o site, apenas as informaçõs do arquivo serão caregadas, possibilitando uma maior fluidez para o site e economia de dados.</p>
+    <p>A tag controls exibe o controlador de áudio no site.</p>
+    <p>A tag loop define que quando o áudio chegar ao final ele reiniciará automaticamente.</p>
+    <p>O elemento source define o diretório do arquivo e o seu formato.</p>
+    <p>Podem ser adicionados varios formatos, porém se o navegador não tiver suporte para nenhum dos formatos, será exibida a menssagem que estiver no parágrafo seguinte.
+    </p>
+    
+</body>
+</html>

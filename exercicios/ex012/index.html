@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vídeos com HTML5.</title>
+</head>
+<body>
+    <h1>Inserindo videos.</h1>
+        <h2>Vídeos hospedados localmente.</h2>
+            <p>Este vídeo está hospedado no meu próprio servidor.</p>
+        <video width="560" poster="imagens/imagen.jpg" controls>
+        <source src="midia/video.mp4" type="vide/mp4">
+        <source src="midia/video.webm" type="video/webm">
+            <p>O seu navegador não tem compatibilidade com reprodução de vídeos.</p>
+        </video>
+            <p>Código:</p>
+        <pre>
+            <code>
+                &ltvideo width="500" poster="imagens/imagen.jpg" controls>
+                    &ltsource src="midia/video.mp4" type="vide/mp4">
+                    &ltsource src="midia/video.webm" type="video/webm">
+                    &ltp>O seu navegador não tem compatibilidade com reprodução de víde&lt/p>
+                &lt/video>
+            </code>
+        </pre>
+            <p>O vídeo acima foi inserido com a tag video. Utilizando o parametro width=500, o vídeo foi apresentado com a largura de 500 pixels. Com o parametro poster, foi incluida a imagen do lago igapó como thumbnail. Com o parametro controls, foi adicionado o menu de reprodução. A tag source foi utilizada duas vezes, a primeira para indicar o vídeo no formato mp4, a segunda indica o formato webm. Logo a baixo, está  a mensagen que será exibida caso nenhum dos dois formatos forém abertos.
+            </p>
+        <h2>Vídeos hospedados no Youtube.</h2>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/HDs-d9R6G14" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+            </iframe>
+                <p>O vídeo acima foi adicionado apenas copiando o código de incorporação do youtube:</p>
+            <pre>
+                <code>
+                    &ltiframe width="560" height="315" src="https://www.youtube.com/embed/HDs-d9R6G14" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+                    &lt/iframe>
+                </code>
+            </pre>
+</body>
+</html>
